@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+nav{
+    border-bottom: 1px solid #FFFFFF;
+    padding: 1rem;
+}
+
+nav p{
+    color: white;
+    font-size: 24px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 2rem 1rem;
+    row-gap: 1.5rem;
+}
+
+.container a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    max-width: 16rem;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 0.5rem 0.5rem 0.75rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.50rem;
+    cursor: pointer;
+}
+
+.item img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.detail-container{
+    padding: 1rem;
+}
+
+.detail-p{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.detail-post{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.detail-post p{
+    color: white;
+}
+
+.detail-post img{
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.loading{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+lottie-player{
+    width: 300px;
+    height: 300px;
+}
+
+
+@media only screen and (max-width: 1166px) {
+    .container {
+      grid-template-columns: auto auto auto;
+      justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 872px) {
+    .container {
+      grid-template-columns: auto auto;
+      justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .container {
+      grid-template-columns: auto;
+      justify-content: space-around;
+    }
+}
